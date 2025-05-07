@@ -16,10 +16,18 @@ const DetailFooter = () => {
           </div>
           <div>
             {/* 팀원명 */}
-            <p>이석재</p>
-            <p>임성준</p>
-            <p>이정민</p>
-            <p>오자현</p>
+            <a href="https://github.com/SeokjaeL" target="_blank">
+              이석재
+            </a>
+            <a href="https://github.com/Seong-Jun1525" target="_blank">
+              임성준
+            </a>
+            <a href="https://github.com/Jungmin828" target="_blank">
+              이정민
+            </a>
+            <a href="https://github.com/ohjaoh" target="_blank">
+              오자현
+            </a>
           </div>
           <div>
             {/* 학교 */}
@@ -61,8 +69,12 @@ const DetailFooterContent = styled.div`
     align-items: center;
   }
 
-  div > p {
+  div > a {
     margin-right: 1rem;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: var(--font-yellow-color);
+    }
   }
 `;
 
