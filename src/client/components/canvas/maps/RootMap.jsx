@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { mainChar } from "../../../../redux/actions/actions";
 import { MainCharacter } from "./player/main/MainCharacter";
-import Direction from "./structures/yuhan_map/3dUIs/modal/Direction";
 import StatueModal from "./structures/yuhan_map/3dUIs/modal/StatueModal";
 import SmokingArea from "./structures/yuhan_map/3dUIs/modal/SmokingArea";
 import YuhanElements from "./structures/yuhan_map/YuhanElements";
@@ -98,7 +97,6 @@ const RootMap = () => {
 
           {busStationValue && (
             <>
-              <Direction position={[170, 0, 0]} />
               <Bus position={[355, 17.5, -150]} />
             </>
           )}
